@@ -1,19 +1,9 @@
-/*
-** medium1.c for allum1 in /home/boitea_r/c/PSU_2015_minitalk
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Feb 21 20:05:54 2016 Ronan Boiteau
-** Last update Sun Feb 21 20:13:39 2016 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "allum1_board.h"
 #include "allum1_marienbad.h"
 #include "allum1_medium.h"
 #include "allum1_random.h"
 #include "my.h"
-#include <stdlib.h>
 
 static void	_finish_him(t_line *board,
 			    int *line,

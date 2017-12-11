@@ -1,17 +1,7 @@
-/*
-** dumb.c for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Wed Feb 17 17:37:41 2016 Ronan Boiteau
-** Last update Wed Feb 17 17:58:24 2016 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "allum1_board.h"
 #include "allum1_random.h"
 #include "my.h"
-#include <stdlib.h>
 
 int		_ai_dumb(t_line *board)
 {

@@ -1,17 +1,7 @@
-/*
-** marienbad1.c for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Wed Feb 17 17:33:52 2016 Ronan Boiteau
-** Last update Sun Feb 21 18:21:21 2016 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "allum1_board.h"
 #include "allum1_marienbad.h"
 #include "my.h"
-#include <stdlib.h>
 
 int		_get_problematic_line(t_line *board, int stack)
 {

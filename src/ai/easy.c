@@ -1,18 +1,8 @@
-/*
-** easy.c for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Wed Feb 17 17:38:02 2016 Ronan Boiteau
-** Last update Sun Feb 21 18:25:12 2016 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "allum1_board.h"
 #include "allum1_marienbad.h"
 #include "allum1_random.h"
 #include "my.h"
-#include <stdlib.h>
 
 static int	_get_problematic_stack(t_line *board)
 {

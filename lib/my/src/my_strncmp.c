@@ -1,13 +1,3 @@
-/*
-** my_strncmp.c for my_strncmp.c in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Tue Oct  6 14:18:14 2015 Ronan Boiteau
-** Last update Mon Jan 18 21:03:07 2016 Ronan Boiteau
-*/
-
 #include "my.h"
 #include <stdlib.h>
 

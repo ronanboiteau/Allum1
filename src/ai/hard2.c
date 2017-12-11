@@ -1,13 +1,3 @@
-/*
-** hard2.c for allum1 in /home/boitea_r/c/PSU_2015_minitalk
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Feb 21 20:21:41 2016 Ronan Boiteau
-** Last update Sun Feb 21 20:24:28 2016 Ronan Boiteau
-*/
-
 #include "allum1_board.h"
 #include "my.h"
 

@@ -1,16 +1,6 @@
-/*
-** random.c for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Feb 13 22:27:12 2016 Ronan Boiteau
-** Last update Sun Feb 21 18:22:34 2016 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "allum1_board.h"
 #include "my.h"
-#include <stdlib.h>
 
 int		_get_rand_matches(t_line *board, int line)
 {

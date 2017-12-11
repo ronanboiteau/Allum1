@@ -1,15 +1,5 @@
-/*
-** nmatch.c for nmatch in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Oct 10 22:11:14 2015 Ronan Boiteau
-** Last update Mon Jan 18 21:03:58 2016 Ronan Boiteau
-*/
-
-#include "my.h"
 #include <stdlib.h>
+#include "my.h"
 
 int	nmatch(char *str1, char *str2)
 {

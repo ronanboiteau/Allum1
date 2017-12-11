@@ -1,15 +1,5 @@
-/*
-** free.c for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Tue Feb  9 14:00:29 2016 Ronan Boiteau
-** Last update Tue Feb  9 14:47:19 2016 Ronan Boiteau
-*/
-
-#include "allum1_board.h"
 #include <stdlib.h>
+#include "allum1_board.h"
 
 void		_free_board(t_line *board)
 {

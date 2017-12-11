@@ -1,19 +1,9 @@
-/*
-** hard1.c for allum1 in /home/boitea_r/c/PSU_2015_minitalk
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Feb 21 18:24:38 2016 Ronan Boiteau
-** Last update Sun Feb 21 20:23:54 2016 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "allum1_board.h"
 #include "allum1_hard.h"
 #include "allum1_marienbad.h"
 #include "allum1_random.h"
 #include "my.h"
-#include <stdlib.h>
 
 static int	_count_one_match_lines(t_line *board)
 {

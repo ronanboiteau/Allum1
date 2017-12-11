@@ -1,20 +1,10 @@
-/*
-** main.c for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Feb  6 15:31:32 2016 Ronan Boiteau
-** Last update Sun Feb 21 20:28:27 2016 Ronan Boiteau
-*/
-
+#include <stdlib.h>
+#include <time.h>
+#include <unistd.h>
 #include "allum1_board.h"
 #include "allum1_options.h"
 #include "allum1_play.h"
 #include "my.h"
-#include <stdlib.h>
-#include <time.h>
-#include <unistd.h>
 
 static void	_start_game(t_line *board, int lines, int matches, char mode)
 {

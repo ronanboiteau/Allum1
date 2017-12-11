@@ -1,16 +1,6 @@
-/*
-** change.c for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Tue Feb  9 14:00:04 2016 Ronan Boiteau
-** Last update Sun Feb 21 20:27:19 2016 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "my.h"
 #include "allum1_board.h"
-#include <stdlib.h>
 
 static int	_get_stack(int *matches, int size)
 {

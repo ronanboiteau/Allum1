@@ -1,15 +1,5 @@
-/*
-** options.c for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Feb  7 22:07:24 2016 Ronan Boiteau
-** Last update Fri Feb 19 12:39:13 2016 Ronan Boiteau
-*/
-
-#include "my.h"
 #include <stdlib.h>
+#include "my.h"
 
 static int	_usage(char *prog_name)
 {
