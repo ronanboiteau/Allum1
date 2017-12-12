@@ -1,13 +1,3 @@
-##
-## Makefile for allum1 in /home/boitea_r
-## 
-## Made by Ronan Boiteau
-## Login   <boitea_r@epitech.net>
-## 
-## Started on  Fri Jan 29 20:59:04 2016 Ronan Boiteau
-## Last update Sun Feb 21 20:23:18 2016 Ronan Boiteau
-##
-
 NAME	 = allum1
 
 IDIR	 = include/
