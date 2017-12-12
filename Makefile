@@ -22,28 +22,37 @@ CFLAGS	+= -Wall -Wextra
 CFLAGS	+= -Wpedantic -Wno-long-long
 CFLAGS	+= -Werror
 
-SDIR	 = src/
-SRCS	 = $(SDIR)board/change.c			\
-	   $(SDIR)board/free.c				\
-	   $(SDIR)board/print.c				\
-	   $(SDIR)chk.c					\
-	   $(SDIR)ai/computer.c				\
-	   $(SDIR)ai/dumb.c				\
-	   $(SDIR)ai/easy.c				\
-	   $(SDIR)ai/hard1.c				\
-	   $(SDIR)ai/hard2.c				\
-	   $(SDIR)ai/marienbad1.c			\
-	   $(SDIR)ai/marienbad2.c			\
-	   $(SDIR)ai/medium1.c				\
-	   $(SDIR)ai/medium2.c				\
-	   $(SDIR)ai/random.c				\
-	   $(SDIR)main.c				\
-	   $(SDIR)options.c				\
-	   $(SDIR)player.c
+AI_DIR		= ai/
+AI_FILES	= computer.c		\
+		  dumb.c		\
+		  easy.c		\
+		  hard1.c		\
+		  hard2.c		\
+		  marienbad1.c		\
+		  marienbad2.c		\
+		  medium1.c		\
+		  medium2.c		\
+		  random.c
+AI		= $(addprefix $(AI_DIR), $(AI_FILES))
 
-OBJS	 = $(SRCS:.c=.o)
+BOARD_DIR	= board/
+BOARD_FILES	= change.c	\
+		  free.c	\
+		  print.c
+BOARD		= $(addprefix $(BOARD_DIR), $(BOARD_FILES))
 
-RM	 = rm -f
+SRCS_DIR	= src/
+SRCS_FILES	= chk.c			\
+		  main.c		\
+		  options.c		\
+		  player.c		\
+		  $(AI)			\
+		  $(BOARD)
+SRCS		= $(addprefix $(SRCS_DIR), $(SRCS_FILES))
+
+OBJS	= $(SRCS:.c=.o)
+
+RM	= rm -f
 
 
 all: $(LIB) $(NAME)
