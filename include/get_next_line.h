@@ -1,14 +1,3 @@
-/*
-** get_next_line.h for get_next_line in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-
-** Started on  Fri Dec 18 19:47:00 2015 Ronan Boiteau
-** Last update Wed Feb 17 15:10:17 2016 Ronan Boiteau
-*/
-
 #ifndef GET_NEXT_LINE_H_
 # define GET_NEXT_LINE_H_
 

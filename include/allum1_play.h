@@ -1,13 +1,3 @@
-/*
-** allum1_play.h for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Feb  6 16:49:05 2016 Ronan Boiteau
-** Last update Wed Feb 17 17:38:52 2016 Ronan Boiteau
-*/
-
 #ifndef ALLUM1_PLAY_H_
 # define ALLUM1_PLAY_H_
 

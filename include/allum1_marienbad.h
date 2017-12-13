@@ -1,13 +1,3 @@
-/*
-** allum1_marienbad.h for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Feb 13 22:23:11 2016 Ronan Boiteau
-** Last update Wed Feb 17 17:32:13 2016 Ronan Boiteau
-*/
-
 #ifndef ALLUM1_MARIENBAD_H_
 # define ALLUM1_MARIENBAD_H_
 

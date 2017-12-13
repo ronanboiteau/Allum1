@@ -1,13 +1,3 @@
-/*
-** list.h for allum1 in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Feb  6 15:33:26 2016 Ronan Boiteau
-** Last update Sat Feb  6 16:22:03 2016 Ronan Boiteau
-*/
-
 #ifndef LIST_H_
 # define LIST_H_
 
