@@ -1,3 +1,0 @@
-[submodule "lib/my"]
-	path = lib/my
-	url = https://github.com/ronanboiteau/libmy
