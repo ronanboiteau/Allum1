@@ -2,7 +2,7 @@
 
 {EPITECH.} first year project.
 
-CLI [nim game](https://en.wikipedia.org/wiki/Nim) in C language.
+Command-line [nim game](https://en.wikipedia.org/wiki/Nim) in C language.
 
 ## Requirements
 
