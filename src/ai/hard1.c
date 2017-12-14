@@ -92,7 +92,7 @@ int		_ai_hard(t_line *board)
   int		matches;
   int		one_match_lines;
 
-  my_printf(EOL "AI's turn..." EOL);
+  my_printf("\nAI's turn...\n");
   one_match_lines = _count_one_match_lines(board);
   if ((lines = _get_lines(board, &nb_lines)) == NULL ||
       (stack = malloc(sizeof(int) * 10)) == NULL)
@@ -106,7 +106,7 @@ int		_ai_hard(t_line *board)
       matches = (rand() % _get_rand_matches(board, line)) + 1;
     }
   _remove_matches(board, line, matches);
-  my_printf("AI removed %i match(es) from line %i" EOL, matches, line);
+  my_printf("AI removed %i match(es) from line %i\n", matches, line);
   free(lines);
   free(stack);
   return (matches);

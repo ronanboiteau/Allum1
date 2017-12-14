@@ -24,6 +24,6 @@ void		_fill_stack(int *stack, int *idx, int nbr)
 
 int		_malloc_failed(void)
 {
-  my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed" EOL);
+  my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed\n");
   return (-1);
 }

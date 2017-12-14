@@ -44,7 +44,7 @@ int		*_get_lines(t_line *board, int *nb_lines)
   *nb_lines = _count_lines(board);
   if ((lines = malloc(sizeof(int) * (*nb_lines + 1))) == NULL)
     {
-      my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed" EOL);
+      my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed\n");
       return (NULL);
     }
   pos = 1;

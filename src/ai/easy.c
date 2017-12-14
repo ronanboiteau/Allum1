@@ -34,10 +34,10 @@ int		_ai_easy(t_line *board)
   int		*lines;
   int		matches;
 
-  my_printf(EOL "AI's turn..." EOL);
+  my_printf("\nAI's turn...\n");
   if ((lines = _get_lines(board, &nb_lines)) == NULL)
     {
-      my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed" EOL);
+      my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed\n");
       return (-1);
     }
   if ((matches = _get_problematic_stack(board)) == -1 ||
@@ -48,10 +48,10 @@ int		_ai_easy(t_line *board)
     }
   if (_remove_matches(board, line, matches) == EXIT_FAILURE)
     {
-      my_dprintf(STDERR, "AI crashed! KO victory..." EOL);
+      my_dprintf(STDERR, "AI crashed! KO victory...\n");
       return (-1);
     }
-  my_printf("AI removed %i match(es) from line %i" EOL, matches, line);
+  my_printf("AI removed %i match(es) from line %i\n", matches, line);
   free(lines);
   return (matches);
 }

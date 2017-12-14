@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include "allum1_board.h"
 #include "allum1_marienbad.h"
@@ -25,8 +26,8 @@ int		_is_stack8_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }
 
 int		_is_stack4_ok(t_line *board)
@@ -40,8 +41,8 @@ int		_is_stack4_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }
 
 int		_is_stack2_ok(t_line *board)
@@ -55,8 +56,8 @@ int		_is_stack2_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }
 
 int		_is_stack1_ok(t_line *board)
@@ -70,6 +71,6 @@ int		_is_stack1_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }

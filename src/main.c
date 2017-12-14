@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
@@ -15,7 +16,7 @@ static void	_start_game(t_line *board, int lines, int matches, char mode)
   player = rand() % 2;
   players[0] = _player_turn;
   players[1] = _computer_turn;
-  while (TRUE)
+  while (true)
     {
       _print_board(board, lines);
       if ((removed = players[player](board, mode)) < 0)
@@ -26,9 +27,9 @@ static void	_start_game(t_line *board, int lines, int matches, char mode)
 	{
 	  _print_board(board, lines);
 	  if (player == 0)
-	    my_printf("I lost.. snif.. but I'll get you next time!!" EOL);
+	    my_printf("I lost.. snif.. but I'll get you next time!!\n");
 	  else
-	    my_printf("You lost, too bad.." EOL);
+	    my_printf("You lost, too bad..\n");
 	  return ;
 	}
     }

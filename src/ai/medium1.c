@@ -50,10 +50,10 @@ int		_ai_medium(t_line *board)
   int		matches;
   int		one_match_lines;
 
-  my_printf(EOL "AI's turn..." EOL);
+  my_printf("\nAI's turn...\n");
   if ((lines = _get_lines(board, &nb_lines)) == NULL)
     {
-      my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed" EOL);
+      my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed\n");
       return (-1);
     }
   one_match_lines = _count_one_match_lines(board);
@@ -66,7 +66,7 @@ int		_ai_medium(t_line *board)
       matches = (rand() % _get_rand_matches(board, line)) + 1;
     }
   _remove_matches(board, line, matches);
-  my_printf("AI removed %i match(es) from line %i" EOL, matches, line);
+  my_printf("AI removed %i match(es) from line %i\n", matches, line);
   free(lines);
   return (matches);
 }

@@ -30,7 +30,7 @@ static void	_compute_stacks(t_line *list_ptr)
 
 static t_line	*_malloc_failed_board(void)
 {
-  my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed" EOL);
+  my_dprintf(STDERR, "ERROR: Out of memory! malloc() failed\n");
   return (NULL);
 }
 
@@ -76,11 +76,11 @@ int		_remove_matches(t_line *board, int line, int matches)
   if (matches <= 0 || matches > board->matches)
     {
       if (matches < 0)
-	my_printf("Error: invalid input (positive number expected)" EOL);
+	my_printf("Error: invalid input (positive number expected)\n");
       else if (matches == 0)
-	my_printf("Error: you have to remove at least one match" EOL);
+	my_printf("Error: you have to remove at least one match\n");
       else if (matches > board->matches)
-	my_printf("Error: not enough matches on this line" EOL);
+	my_printf("Error: not enough matches on this line\n");
       return (EXIT_FAILURE);
     }
   board->matches -= matches;

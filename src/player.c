@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include "allum1_board.h"
 #include "allum1_chk.h"
@@ -13,14 +14,14 @@ static int	_get_line_nbr(int *ok, int *error)
   input = get_next_line(STDIN);
   if (input == NULL)
     {
-      *error = TRUE;
-      *ok = FALSE;
+      *error = true;
+      *ok = false;
       return (EXIT_FAILURE);
     }
-  else if (input[0] == C_NUL)
+  else if (input[0] == '\0')
     {
-      my_printf("Error: invalid input (positive number expected)" EOL);
-      *ok = FALSE;
+      my_printf("Error: invalid input (positive number expected)\n");
+      *ok = false;
       return (EXIT_FAILURE);
     }
   line = my_atoi(input);
@@ -38,14 +39,14 @@ static int	_get_matches_to_rm(int *ok, int *error)
   input = get_next_line(STDIN);
   if (input == NULL)
     {
-      *error = TRUE;
-      *ok = FALSE;
+      *error = true;
+      *ok = false;
       return (EXIT_FAILURE);
     }
-  else if (input[0] == C_NUL)
+  else if (input[0] == '\0')
     {
-      my_printf("Error: invalid input (positive number expected)" EOL);
-      *ok = FALSE;
+      my_printf("Error: invalid input (positive number expected)\n");
+      *ok = false;
       return (EXIT_FAILURE);
     }
   matches = my_atoi(input);
@@ -55,16 +56,16 @@ static int	_get_matches_to_rm(int *ok, int *error)
 
 static void	_init_turn(int mode, int *ok)
 {
-  my_printf(EOL "Your turn:" EOL);
+  my_printf("\nYour turn:\n");
   (void)mode;
-  *ok = FALSE;
+  *ok = false;
   return ;
 }
 
 static void	_init_input(int *ok, int *error, int *line)
 {
-  *error = FALSE;
-  *ok = TRUE;
+  *error = false;
+  *ok = true;
   *line = _get_line_nbr(ok, error);
   return ;
 }
@@ -80,20 +81,20 @@ int		_player_turn(t_line *board, int mode)
   while (!ok)
     {
       _init_input(&ok, &error, &line);
-      if (error == TRUE)
+      if (error == true)
 	return (-2);
-      if (ok == TRUE)
+      if (ok == true)
 	{
-	  if ((ok = _chk_line_nbr(board, line, &ok)) == TRUE)
+	  if ((ok = _chk_line_nbr(board, line, &ok)) == true)
 	    {
 	      matches = _get_matches_to_rm(&ok, &error);
-	      if (error == TRUE)
+	      if (error == true)
 		return (-2);
-	      if (ok == TRUE && _remove_matches(board, line, matches) == 1)
-		ok = FALSE;
+	      if (ok == true && _remove_matches(board, line, matches) == 1)
+		ok = false;
 	    }
 	}
     }
-  my_printf("Player removed %i match(es) from line %i" EOL, matches, line);
+  my_printf("Player removed %i match(es) from line %i\n", matches, line);
   return (matches);
 }

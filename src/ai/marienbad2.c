@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include "allum1_board.h"
 #include "my.h"
@@ -13,8 +14,8 @@ int		_is_stack256_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }
 
 int		_is_stack128_ok(t_line *board)
@@ -28,8 +29,8 @@ int		_is_stack128_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }
 
 int		_is_stack64_ok(t_line *board)
@@ -43,8 +44,8 @@ int		_is_stack64_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }
 
 int		_is_stack32_ok(t_line *board)
@@ -58,8 +59,8 @@ int		_is_stack32_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }
 
 int		_is_stack16_ok(t_line *board)
@@ -73,6 +74,6 @@ int		_is_stack16_ok(t_line *board)
       board = board->next;
     }
   if (sum % 2 == 1)
-    return (FALSE);
-  return (TRUE);
+    return (false);
+  return (true);
 }

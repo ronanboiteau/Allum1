@@ -1,9 +1,10 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "my.h"
 
 static int	_usage(char *prog_name)
 {
-  my_dprintf(STDERR, "Usage: %s [-m dumb|easy|medium|hard] [-l LINES]" EOL,
+  my_dprintf(STDERR, "Usage: %s [-m dumb|easy|medium|hard] [-l LINES]\n",
 	     prog_name);
   return (-1);
 }
@@ -21,7 +22,7 @@ int		_get_lines_nbr(int argc, char **argv)
 	{
 	  if (!my_str_isnum(argv[idx + 1]))
 	    {
-	      my_dprintf(STDERR, "Numeric argument required with \"-l\"" EOL);
+	      my_dprintf(STDERR, "Numeric argument required with \"-l\"\n");
 	      return (-1);
 	    }
 	  lines = my_atoi(argv[idx + 1]);
@@ -30,7 +31,7 @@ int		_get_lines_nbr(int argc, char **argv)
     }
   if (lines > 256 || lines <= 0)
     {
-      my_dprintf(STDERR, "Number of lines out of range! {1..256}" EOL);
+      my_dprintf(STDERR, "Number of lines out of range! {1..256}\n");
       return (-1);
     }
   return (lines);

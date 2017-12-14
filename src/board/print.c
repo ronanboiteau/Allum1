@@ -12,7 +12,7 @@ static void	_print_header_footer(int last_column)
       my_printf("%c", '*');
       idx++;
     }
-  my_printf(EOL);
+  my_printf("%c", '\n');
   return ;
 }
 
@@ -57,7 +57,7 @@ void		_print_board(t_line *list_start, int lines)
 	  matches++;
 	}
       _print_last_column((matches - idx + lines + 2), (lines * 2) + 1);
-      my_printf(EOL);
+      my_printf("%c", '\n');
       tmp = tmp->next;
       idx++;
     }

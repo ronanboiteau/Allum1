@@ -5,9 +5,10 @@ IDIR	 = include/
 LIB	 = libmy.a
 LNAME	 = my
 LDIR	 = lib/my
+IDIR_MY	 = lib/my/include/
 
 CC	 = gcc
-CFLAGS	+= -I $(IDIR)
+CFLAGS	+= -I $(IDIR) -I $(IDIR_MY)
 CFLAGS	+= -Wall -Wextra
 CFLAGS	+= -Wpedantic -Wno-long-long
 CFLAGS	+= -Werror
@@ -51,7 +52,7 @@ $(LIB):
 	make -C $(LDIR)
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(OBJS) -L lib -l $(LNAME)
+	$(CC) -L $(LDIR) -l $(LNAME) -o $(NAME) $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
