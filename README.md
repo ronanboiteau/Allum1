@@ -1,4 +1,4 @@
-# Allum1
+# Matchstick
 
 {EPITECH.} first year project.
 
@@ -11,7 +11,7 @@ Command-line [nim game](https://en.wikipedia.org/wiki/Nim) in C language.
 
 ## Compilation
 
-Navigate to the root of the repository from your Terminal and run `make` to build the `allum1` executable file.
+Navigate to the root of the repository from your Terminal and run `make` to build the `matchstick` executable file.
 
 ## Options
  - `-m [dumb|easy|medium|hard]`: choose AI level

@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "my.h"
-#include "allum1_board.h"
+#include "matchstick_board.h"
 
 static int	_get_stack(int *matches, int size)
 {

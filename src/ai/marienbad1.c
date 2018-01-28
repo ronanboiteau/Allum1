@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
-#include "allum1_board.h"
-#include "allum1_marienbad.h"
+#include "matchstick_board.h"
+#include "matchstick_marienbad.h"
 #include "my.h"
 
 int		_get_problematic_line(t_line *board, int stack)

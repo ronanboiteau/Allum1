@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "allum1_board.h"
+#include "matchstick_board.h"
 
 void		_free_board(t_line *board)
 {

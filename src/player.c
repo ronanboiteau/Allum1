@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
-#include "allum1_board.h"
-#include "allum1_chk.h"
+#include "matchstick_board.h"
+#include "matchstick_chk.h"
 #include "my.h"
 
 static int	_get_line_nbr(int *ok, int *error)

@@ -1,4 +1,4 @@
-#include "allum1_board.h"
+#include "matchstick_board.h"
 #include "my.h"
 
 void		_finish_him(t_line *board,

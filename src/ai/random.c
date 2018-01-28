@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "allum1_board.h"
+#include "matchstick_board.h"
 #include "my.h"
 
 int		_get_rand_matches(t_line *board, int line)

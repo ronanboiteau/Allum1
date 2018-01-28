@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "allum1_board.h"
+#include "matchstick_board.h"
 
 int		_count_one_match_lines(t_line *board)
 {

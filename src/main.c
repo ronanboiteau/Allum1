@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-#include "allum1_board.h"
-#include "allum1_options.h"
-#include "allum1_play.h"
+#include "matchstick_board.h"
+#include "matchstick_options.h"
+#include "matchstick_play.h"
 #include "my.h"
 
 static void	_start_game(t_line *board, int lines, int matches, char mode)

@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include "allum1_board.h"
-#include "allum1_random.h"
+#include "matchstick_board.h"
+#include "matchstick_random.h"
 #include "my.h"
 
 int		_ai_dumb(t_line *board)

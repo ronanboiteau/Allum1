@@ -1,8 +1,8 @@
 #include <stdlib.h>
-#include "allum1_board.h"
-#include "allum1_hard.h"
-#include "allum1_marienbad.h"
-#include "allum1_random.h"
+#include "matchstick_board.h"
+#include "matchstick_hard.h"
+#include "matchstick_marienbad.h"
+#include "matchstick_random.h"
 #include "my.h"
 
 static int	_count_one_match_lines(t_line *board)

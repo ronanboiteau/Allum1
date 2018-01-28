@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "allum1_board.h"
+#include "matchstick_board.h"
 #include "my.h"
 
 static void	_print_header_footer(int last_column)

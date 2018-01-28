@@ -1,5 +1,5 @@
-#include "allum1_board.h"
-#include "allum1_play.h"
+#include "matchstick_board.h"
+#include "matchstick_play.h"
 
 int		_computer_turn(t_line *board, char mode)
 {

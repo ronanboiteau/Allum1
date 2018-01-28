@@ -1,8 +1,8 @@
 #include <stdlib.h>
-#include "allum1_board.h"
-#include "allum1_marienbad.h"
-#include "allum1_medium.h"
-#include "allum1_random.h"
+#include "matchstick_board.h"
+#include "matchstick_marienbad.h"
+#include "matchstick_medium.h"
+#include "matchstick_random.h"
 #include "my.h"
 
 static void	_finish_him(t_line *board,

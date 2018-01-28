@@ -1,4 +1,4 @@
-NAME	 = allum1
+NAME	 = matchstick
 
 IDIR	 = include/
 

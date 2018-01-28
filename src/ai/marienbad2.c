@@ -1,6 +1,6 @@
 #include <stdbool.h>
 #include <stdlib.h>
-#include "allum1_board.h"
+#include "matchstick_board.h"
 #include "my.h"
 
 int		_is_stack256_ok(t_line *board)

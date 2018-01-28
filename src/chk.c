@@ -1,6 +1,6 @@
 #include <stdbool.h>
 #include <stdlib.h>
-#include "allum1_board.h"
+#include "matchstick_board.h"
 #include "my.h"
 
 static int	_quit_empty(int *ok)
